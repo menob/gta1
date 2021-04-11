@@ -1,0 +1,1 @@
+<?php header('location: /gta_rp.html'); ?>

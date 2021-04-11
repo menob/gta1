@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+   
+<link rel="stylesheet" href="styles.css">
+     
+</head>
+    <body>
+   
+    <header>
+        <h1>Gta Screenshots</h1>
+        <h4>Gta Clips</h4>
+    </header>
+        <h2>Welcome</h2>
+        <p>Gta Clips and Photos are taken from one of the best photographers in the world.</p>
+        <br>
+        <br>
+        ABOUT US: founded in 2020 by kourosh, founded in NVE
+                <h2>
+             PRODUCTS WE SELL://
+        </h2>
+    <section class=" blue Container">
+
+       
+       
+       
+        <article class="Card">
+               
+            <div class="Mandrill"> </div>
+            <h3>Clips</h3>
+            <p>Our clips have been made with love and passion. </p>
+            <button>Contact</button>
+             </article>
+           
+        <article class="Card">
+            <div class="Baboon">;</div>
+        <h3>Screenshots</h3>
+            <p>Our photos have been taken and edited and made with passion.</p>
+            <button>Contact</button>
+        </article>
+       
+        <article class="Card">
+            <div class="Mantled"></div>
+        <h3>Videos</h3>
+            <p>Our videos have been edited and made in to great montages.</p>
+            <button>Contact</button>
+        </article>
+       
+         </section>
+         <h2>
+             OUR TEAM://
+        </h2>
+    <section class=" blue Container">
+
+       
+       
+       
+        <article class="Card">
+               
+            <div class="icons">&#10086; </div>
+            <h3>Kourosh</h3>
+            <p>Edits and Takes the clips over night. </p>
+            <button>Contact</button>
+             </article>
+           
+        <article class="Card">
+            <div class="icons">&#x1F60E;</div>
+        <h3>Yawns </h3>
+            <p>looks at my phots and Photos and rates them 10/10.</p>
+            <button>Contact</button>
+        </article>
+       
+         </section>
+        <section>
+        <h2>MY ORDER FORM</h2>
+            <table>
+            <tr>
+                <td> Name: </td>
+                <td><input type="text" size="25" name="my-name"></td>
+                </tr>
+               
+            <tr>
+               
+                <td>ADDRESS:</td>
+              <td><input type="text" size="25" name="my-address"></td>
+                </tr>
+               
+                <tr>
+<td> Best clips: </td>
+<td>
+<select name="my-monkey">
+<option> Clips </option>
+<option> Screnshots </option>
+<option> Montages </option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td> Quantity: </td>
+<td><input type="number" name="my-qty"
+value="1" min="1" max="5"> <small>(max 5)</small></td>
+   
+</tr>
+                <tr>
+                <br>
+                </tr>
+                <tr>
+                    <td colspan="2" >
+                        <input class="button"
+type="button"
+value="Process Order"
+                               onclick="placeOrder();">
+                       
+                        <input class="button"
+                               
+                               type="reset" value="Clear"
+                               onclick="document.getElementById('my-order').style.display = 'none'";>
+                     </td>
+                </tr>
+
+            </table>
+        </section>
+       
+    <form>
+<h1>Question Form:</h1>
+Any Questions you may have?
+<br>
+<input type="text" size="50">
+<br><br>
+<button>Submit</button>
+</form>
+        <div id="my-order">
+</div>
+               
+       
+        <div class="footer">
+            <h3>Thanks for Visiting</h3>
+            <div class="Container">
+            <article class="Card">
+                <h3>Get in Touch</h3>
+                <p>Best place to buy photos and clips and videos.</p>
+               
+                </article>
+               
+                <artice class="Card">
+                <h3>Contact us</h3>
+                    <p>We would love to hear from you.</p>
+                    <br> Call or email us. <br>
+                    Mobile: 91119
+                    Email:19047@gdc.school.nz
+               
+               
+               
+                </artice>
+            </div>
+            &copy; 2021 Clips 
+        </div>
+            <script>
+            function placeOrder () {
+                var orderForm = document.getElementById("my-form")
+                results = "<h3>Success!</h3> Here is your order.";
+                results += "<br>Name: " + orderForm.elements["my-name"].value;
+                results += "<br>Address: " + orderForm.elements["my-address"].value;
+                results += "<br>I like to order: " + orderForm.elements["my-monkey"].value;
+                results += "<br>Quantity: " + orderForm.elements["my-qty"].value;
+                var orderResults =document.getElementById("my-order");
+                 orderResults.style.display="block";
+                orderResults.innerHTML = results;  
+}
+        </script>
+   
+   
+    </body>
+   
+   
+</html>
+
+
+
