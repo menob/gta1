@@ -1,1 +1,1 @@
-<?php header('location: /gta_rp.html'); ?>
+<?php header('location: /gtarp.html'); ?>
